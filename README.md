@@ -6,7 +6,7 @@ DevOps Engineer Technical Test - Lumu Technologies
 
 1. You will be in charge of running a set of JVM-based microservices connected to MongoDB, exchanging messages through a kafka broker and communicating with external clients using HTTP Restful Services.
 
-- What metrics do you consider the most critical to monitor for the system and what tools would you use?
+    - What metrics do you consider the most critical to monitor for the system and what tools would you use?
 
     ##### Answer
 
@@ -37,3 +37,15 @@ DevOps Engineer Technical Test - Lumu Technologies
     - Prometheus and/or DataDog for the colletion of metrics that the application emits and persisted them to provide advanced querying capability
     - Grafana for the visualization of the metrics collected by Prometheus and build reusability and intuitive views and dashboards. 
     - AWS Cloudwatch for the resource utilization metrics if it is cloud based architecture. Also cloudwatch has the capability to report alerts and notifications when metrics breach the defined thresholds.
+
+2. Provide a Linux command to find all files which have been accessed between 20 and 30 days ago.  Explain your command.
+
+    ##### Answer
+
+    `find / -type f -atime +20 -atime -30`
+
+    - **find**: This command allows us to search and locate specific files, list of files and directories based on certain conditions that match the arguments.
+    - **/**: This specifies that the search will be under all set files in the system.
+    - **-type f**: The *-type f* flag specifies and tell the command that search for files, not directories, binaries, etc, just files.
+    - **-atime +20**: The *-atime +20* flag tells the command to search for files which are accesed more than 20 days (*+20*). 
+    - **-atime -30**: The *-atime -30* flag tells the command to search for files which are accesed less than 30 days (*-30*).
