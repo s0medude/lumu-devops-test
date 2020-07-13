@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  flask_app:
+    container_name: flask_app
+    restart: always
+    build: ./flask_app
+    ports:
+      - "9000:9000"
+    command: source venv/bin/activate && gunicorn -w 16 -b 0.0.0.0:9000 app:app --daemon && deactivate
+  
+  nginx:
+    container_name: nginx
+    restart: always
+    build: ./nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - flask_app
