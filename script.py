@@ -85,7 +85,7 @@ def initialize():
     print(f'Average file size: {average_size}')
     print('Top Files: ')
     for key, value in top_files.items():
-        print(f'\t{key} ', end='==> ')
+        print(f'{key} ', end='==> ')
         print(f'{value} kb')
         
 
