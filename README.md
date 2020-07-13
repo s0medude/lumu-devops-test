@@ -8,7 +8,7 @@ DevOps Engineer Technical Test - Lumu Technologies
 
     - What metrics do you consider the most critical to monitor for the system and what tools would you use?
 
-    ##### Answer
+    #### Answer
 
     In my opinion, the first thing to consider it is to have uniformity in types of metrics being collected across all microservices and the consistency of metrics across multiple microservices. This make easier the reusability, reability and make dashboards intuitive even with hundrends of microservices. Also if it is a cloud-architecture, monitoring cloud usage costs, and monitor different cloud services should be consider too.
 
@@ -40,7 +40,7 @@ DevOps Engineer Technical Test - Lumu Technologies
 
 2. Provide a Linux command to find all files which have been accessed between 20 and 30 days ago.  Explain your command.
 
-    ##### Answer
+    #### Answer
 
     `find / -type f -atime +20 -atime -30`
 
@@ -49,3 +49,9 @@ DevOps Engineer Technical Test - Lumu Technologies
     - **-type f**: The *-type f* flag specifies and tell the command that search for files, not directories, binaries, etc, just files.
     - **-atime +20**: The *-atime +20* flag tells the command to search for files which are accesed more than 20 days (*+20*). 
     - **-atime -30**: The *-atime -30* flag tells the command to search for files which are accesed less than 30 days (*-30*).
+
+3. Write a simple Python script that lists the 5 biggest files in a givendirectory (sorted by size), as well as the total size, number of filesand average size of files in the directory.
+    
+    #### Answer
+    
+    Go to [script.py](./script.py) file for the answer to this question... or try it yourself by running: `python script.py`
