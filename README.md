@@ -50,8 +50,13 @@ DevOps Engineer Technical Test - Lumu Technologies
     - **-atime +20**: The *-atime +20* flag tells the command to search for files which are accesed more than 20 days (*+20*). 
     - **-atime -30**: The *-atime -30* flag tells the command to search for files which are accesed less than 30 days (*-30*).
 
-3. Write a simple Python script that lists the 5 biggest files in a givendirectory (sorted by size), as well as the total size, number of filesand average size of files in the directory.
+3. Write a simple Python script that lists the 5 biggest files in a givendirectory (sorted by size), as well as the total size, number of files and average size of files in the directory.
     
     #### Answer
     
-    Go to [script.py](./script.py) file for the answer to this question... or try it yourself by running: `python script.py`
+    Go to [script.py](./script.py) file for the answer to this question... or try it yourself by running: 
+    `python script.py`
+
+### System Analysis
+
+    Go to [README.md](./system_analysis/README.md)
