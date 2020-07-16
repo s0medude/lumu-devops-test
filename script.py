@@ -82,9 +82,8 @@ def get_average_size(files):
 
 # Initializa the script 
 def initialize():
-    directory, choice = None, 0 
-
-
+    directory, choice = None, 0
+    
     while choice == 0 or choice > 2:
         choice = int(input('Press the number option:\n1. Directory Full Path\n2, Directory Name\n'))
     else:       
@@ -92,8 +91,7 @@ def initialize():
             while not directory:
                 input_path = input('Please enter the full path of the directory to be analyze: \n')
                 print('\n')
-                directory = is_directory(input_path)
-                
+                directory = is_directory(input_path)                
         elif choice == 2:
             while not directory:
                 input_path = input('Please enter the name of the directory to be analyze: \n')
@@ -113,7 +111,7 @@ def initialize():
     print(f'Average file size: {average_size}')
     print('Top Files: ')
     for file, size in top_files.items():
-        file = os.path.basename(file)
+        """ file = os.path.basename(file) """
         print(f'{file} ', end='==> ')
         print(f'{size} kb')
         
